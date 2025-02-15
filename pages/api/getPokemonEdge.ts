@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
-
-export const config = {
+ export const runtime = 'edge';
+/*export const config = {
     runtime: 'edge', //This specifies the runtime environment that the middleware function will be executed in.
-};
+};*/
 
 export default async function handler() {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/129`)
